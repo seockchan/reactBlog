@@ -1,0 +1,77 @@
+#footer {
+    width: 100%;
+    height: 682px;
+    font-family: 'GmarketSans';
+}
+
+#footer .footer-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 72px;
+}
+
+#footer .footer-menu h3 {
+    padding-top: 149px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+#footer .footer-menu ul li {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#footer .footer-menu ul li a {
+    position: relative;
+    color: #111;
+    transition: all 0.3;
+}
+#footer .footer-menu ul li a:hover {
+    color: #000;
+}
+#footer .footer-menu ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+#footer .footer-menu ul li a:hover::before {
+    transform: scaleX(1);
+    color: #000;
+}
+.footer-rights {
+    border-top: 1px solid rgb(205, 205, 205);
+    text-align: center;
+    padding-top: 49px;
+    font-family: 'GmarketSans';
+}
+
+.footer-sns {
+    margin-top: 10px;
+}
+.footer-sns ul {
+    display: flex;
+    justify-content: center;
+}
+.footer-sns li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+    /* background-image: url(../img/imgg/icon30.svg); */
+}
+.footer-sns li:nth-child(2) a {
+    background-position: -50px 0;
+}
+.footer-sns li:nth-child(3) a {
+    background-position: -100px 0;
+}
+.footer-sns li:nth-child(4) a {
+    background-position: -150px 0;
+}
