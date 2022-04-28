@@ -89,7 +89,7 @@ function Home() {
                 <section id="blog-type" className="section center type">
                     <div className="container">
                         <h3 className="section__title">새로운 강의</h3>
-                        <p className="section__desc">강의와 관련된 블로그입니다. 다양한 정보를 확인하세요!</p>
+                        <p className="section__desc">강의와 관련된 블로그입니다. 다양한 정보를 확인하세요!!!</p>
                         <div className="blog__inner">
                             <div className="blog__cont">
                                 <Post />
