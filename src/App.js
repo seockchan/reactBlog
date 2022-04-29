@@ -5,6 +5,10 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Home from './pages/home/Home';
 import Login from './pages/login/Login';
+import Join from './pages/join/Join';
+import My from './pages/my/My';
+import View from './pages/view/View';
+import Write from './pages/write/Write';
 
 function App() {
     return (
@@ -17,6 +21,18 @@ function App() {
                     </Route>
                     <Route path="/login">
                         <Login />
+                    </Route>
+                    <Route path="/Join">
+                        <Join />
+                    </Route>
+                    <Route path="/My">
+                        <My />
+                    </Route>
+                    <Route path="/View">
+                        <View />
+                    </Route>
+                    <Route path="/Write">
+                        <Write />
                     </Route>
                 </Switch>
                 <Footer />

@@ -1,6 +1,97 @@
 @charset "UTF-8";
 
-/* common */
+/* 여백 초기화 */
+body,
+div,
+dl,
+dt,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+button,
+figure,
+figcaption {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 시멘틱 태그 초기화 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+    box-sizing: border-box;
+}
+
+/* 폰트 초기화 */
+body,
+button,
+input,
+select,
+table,
+textarea {
+    color: #222;
+    font-family: 'NexonLv1Gothic', 'AppleSDGothicNeo-Regular', 'Malgun Gothic', '맑은 고딕', dotum, 돋움;
+}
+
+/* 링크 초기화 */
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+/* 목록 초기화 */
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+/* 스타일 초기화 */
+em,
+address {
+    font-style: normal;
+}
+img {
+    width: 100%;
+    vertical-align: top;
+}
+img,
+fieldset,
+button {
+    border: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
 /* 스킵 메뉴 */
 #skip {
@@ -24,20 +115,18 @@
 
 /* 클리어 픽스 */
 .clearfix {
-    zoom: 1; /* ie 6,7,8 */
+    zoom: 1;
 }
 .clearfix::before,
 .clearfix::after {
     content: '';
     display: block;
 }
-.clearfix:after {
+.clearfix::after {
     clear: both;
 }
-/* ir 효과
-ir_pm : 의미 있는 이미지의 대체 텍스트를 제공하는 경우
-ir_wa : 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고 싶을 때
-ir_so : 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+
+/* ir 효과 */
 .ir_pm {
     display: block;
     overflow: hidden;
@@ -74,6 +163,7 @@ ir_so : 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제�
         padding: 0 20px;
     }
 }
+
 #contents {
     min-height: 70vh;
 }
@@ -95,6 +185,7 @@ ir_so : 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제�
 .center {
     text-align: center;
 }
+
 @media (max-width: 600px) {
     .section__title {
         font-size: 24px;
@@ -103,7 +194,40 @@ ir_so : 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제�
         font-size: 18px;
     }
 }
-/* 경고창 */
+
+/* 배경색 */
+.gray {
+    background: #f5f5f5;
+}
+.white {
+    background: #fff !important;
+}
+.purple {
+    background: #f7f6ff;
+}
+
+/* input__style */
+.input__style {
+    border: 2px solid #a69cf7;
+    padding: 15px 30px;
+    background-color: #d3cef8;
+    border-radius: 50px;
+    margin: 5px;
+}
+.input__style.width {
+    min-width: 400px;
+}
+.input__style::-webkit-input-placeholder {
+    color: #7469c6;
+}
+.input__style:-ms-input-placeholder {
+    color: #7469c6;
+}
+.input__style::placeholder {
+    color: #7469c6;
+}
+
+/* alert */
 .alert {
     max-width: 665px;
     border: 1px solid #dedede;
@@ -112,412 +236,106 @@ ir_so : 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제�
     padding: 50px;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 200px;
+    transform: translateX(-50%);
 }
-/* 간격설정 */
 
+/* 간격 셋팅 */
 .mt0 {
-    margin-top: 0px !important;
+    margin-top: 0 !important;
 }
-
-.mt5 {
-    margin-top: 5px !important;
-}
-
 .mt10 {
     margin-top: 10px !important;
 }
-
-.mt15 {
-    margin-top: 15px !important;
-}
-
 .mt20 {
     margin-top: 20px !important;
 }
-
-.mt25 {
-    margin-top: 25px !important;
-}
-
 .mt30 {
     margin-top: 30px !important;
 }
-
-.mt35 {
-    margin-top: 35px !important;
-}
-
 .mt40 {
     margin-top: 40px !important;
 }
-
-.mt45 {
-    margin-top: 45px !important;
-}
-
 .mt50 {
     margin-top: 50px !important;
 }
-
-.mt55 {
-    margin-top: 55px !important;
-}
-
 .mt100 {
     margin-top: 100px !important;
 }
 
-.mb0 {
-    margin-bottom: 0px !important;
-}
-
-.mb5 {
-    margin-bottom: 5px !important;
-}
-
-.mb10 {
-    margin-bottom: 10px !important;
-}
-
-.mb15 {
-    margin-bottom: 15px !important;
-}
-
-.mb20 {
-    margin-bottom: 20px !important;
-}
-
-.mb25 {
-    margin-bottom: 25px !important;
-}
-
-.mb30 {
-    margin-bottom: 30px !important;
-}
-
-.mb35 {
-    margin-bottom: 35px !important;
-}
-
-.mb40 {
-    margin-bottom: 40px !important;
-}
-
-.mb45 {
-    margin-bottom: 45px !important;
-}
-
-.mb50 {
-    margin-bottom: 50px !important;
-}
-
-.mb55 {
-    margin-bottom: 55px !important;
-}
-
-.mb100 {
-    margin-bottom: 100px !important;
-}
-/* 간격설정 */
-
 .ml0 {
-    margin-left: 0px !important;
+    margin-left: 0 !important;
 }
-
-.ml5 {
-    margin-left: 5px !important;
-}
-
 .ml10 {
     margin-left: 10px !important;
 }
-
-.ml15 {
-    margin-left: 15px !important;
-}
-
 .ml20 {
     margin-left: 20px !important;
 }
-
-.ml25 {
-    margin-left: 25px !important;
-}
-
 .ml30 {
     margin-left: 30px !important;
 }
-
-.ml35 {
-    margin-left: 35px !important;
-}
-
 .ml40 {
     margin-left: 40px !important;
 }
-
-.ml45 {
-    margin-left: 45px !important;
-}
-
 .ml50 {
     margin-left: 50px !important;
 }
-
-.ml55 {
-    margin-left: 55px !important;
-}
-
 .ml100 {
     margin-left: 100px !important;
 }
+
 .mr0 {
-    margin-right: 0px !important;
+    margin-right: 0 !important;
 }
-
-.mr5 {
-    margin-right: 5px !important;
-}
-
 .mr10 {
     margin-right: 10px !important;
 }
-
-.mr15 {
-    margin-right: 15px !important;
-}
-
 .mr20 {
     margin-right: 20px !important;
 }
-
-.mr25 {
-    margin-right: 25px !important;
-}
-
 .mr30 {
     margin-right: 30px !important;
 }
-
-.mr35 {
-    margin-right: 35px !important;
-}
-
 .mr40 {
     margin-right: 40px !important;
 }
-
-.mr45 {
-    margin-right: 45px !important;
-}
-
 .mr50 {
     margin-right: 50px !important;
 }
-
-.mr55 {
-    margin-right: 55px !important;
-}
-
 .mr100 {
     margin-right: 100px !important;
 }
 
-/* 배경색 */
-.gray {
-    background: #f5f5f5 !important;
+.mb0 {
+    margin-bottom: 0 !important;
 }
-.white {
-    background: #fff !important;
+.mb10 {
+    margin-bottom: 10px !important;
 }
-.pupple {
-    background: #f7f6ff !important;
+.mb20 {
+    margin-bottom: 20px !important;
 }
-.center {
-    text-align: center;
+.mb30 {
+    margin-bottom: 30px !important;
 }
-/* input_style */
-.input_style {
-    border: 2px solid rgb(150, 111, 111);
-    padding: 15px 30px;
-    background-color: rgba(150, 111, 111, 0.3);
-    border-radius: 50px;
-    margin: 5px;
+.mb40 {
+    margin-bottom: 40px !important;
 }
-.input_style.width {
-    min-width: 400px;
+.mb50 {
+    margin-bottom: 50px !important;
 }
-.input_style::-webkit-input-placeholder {
-    color: rgba(150, 111, 111, 0.5);
-}
-.input_style:-ms-input-placeholder {
-    color: rgba(150, 111, 111, 0.5);
-}
-.input_style::placeholder {
-    color: rgba(150, 111, 111, 0.5);
+.mb100 {
+    margin-bottom: 100px !important;
 }
 
-/* reset */
-
-/* 여백 초기화 */
-body,
-div,
-dl,
-dt,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-legend,
-textarea,
-p,
-blockquote,
-th,
-td,
-input,
-select,
-button,
-article,
-aside,
-details,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-figure,
-figcaption {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* 가로모드 글씨 확대 초기화 */
-html {
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
-/* 시멘틱 태그 블록화 */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-/* 폰트 초기화 */
-body,
-button,
-input,
-select,
-table,
-textarea {
-    color: #222;
-    font-family: NexonLv1Gothic, AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum, 돋움;
-}
-.NexonLv1 {
-    font-family: 'NexonLv1Gothic';
-}
-.NexonLv1-300 {
-    font-family: 'NexonLv1Gothic';
-    font-weight: 300;
-}
-.NexonLv1-400 {
-    font-family: 'NexonLv1Gothic';
-    font-weight: 400;
-}
-.NexonLv1-700 {
-    font-family: 'NexonLv1Gothic';
-    font-weight: 700;
-}
-.NexonLv2 {
-    font-family: 'NexonLv2Gothic';
-}
-.NexonLv2-300 {
-    font-family: 'NexonLv2Gothic';
-    font-weight: 300;
-}
-.NexonLv2-400 {
-    font-family: 'NexonLv2Gothic';
-    font-weight: 400;
-}
-.NexonLv2-500 {
-    font-family: 'NexonLv2Gothic';
-    font-weight: 500;
-}
-.NexonLv2-700 {
-    font-family: 'NexonLv2Gothic';
-    font-weight: 700;
-}
-.Gmarket {
-    font-family: 'GmarketSans';
-}
-.Gmarket-300 {
-    font-family: 'GmarketSans';
-    font-weight: 300;
-}
-.Gmarket-300 {
-    font-family: 'GmarketSans';
-    font-weight: 300;
-}
-.Gmarket-500 {
-    font-family: 'GmarketSans';
-    font-weight: 500;
-}
-.Gmarket-700 {
-    font-family: 'GmarketSans';
-    font-weight: 700;
-}
-
-/* 링크 초기화 */
-a {
-    color: #222;
-    text-decoration: none;
-}
-
-/* 목록 초기화 */
-ol,
-ul,
-li {
-    list-style: none;
-}
-
-/* 스타일 초기화 */
-em,
-address {
-    font-style: normal;
-}
-img {
+/* layout */
+#main {
+    max-width: 1200px;
     width: 100%;
-    vertical-align: top;
+    margin: 0 auto;
 }
-img,
-fieldset,
-button {
-    border: 0;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+#main.col2 {
+    display: flex;
+    justify-content: space-between;
 }

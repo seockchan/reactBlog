@@ -3,29 +3,19 @@ import './posts.css';
 
 export default function Post() {
     return (
-        <>
-            <article className="blog">
-                <figure className="blog__header">
-                    <a href="/"></a>
-                </figure>
-                <div className="blog__body">
-                    <span className="blog__cate">javascript</span>
-                    <div className="blog__title">포스트 제목</div>
-                    <div className="blog__desc">포스트 컨텐츠</div>
-                    <div className="blog__info">
-                        <span className="author">
-                            <a href="/">글쓴이</a>
-                        </span>
-                        <span className="date">2022.04.27</span>
-                        <span className="modify">
-                            <a href="/">수정</a>
-                        </span>
-                        <span className="delete">
-                            <a href="/">삭제</a>
-                        </span>
-                    </div>
+        <article className="post">
+            <figure className="post__header" aria-hidden="true">
+                <img src="https://source.unsplash.com/800x600/?nature,water" alt="1" />
+            </figure>
+            <div className="post__body">
+                <span className="post__cate">javascript</span>
+                <div className="post__title">포스트 제목입니다.</div>
+                <div className="post__desc">포스트 설명부분입니다. 포스트 설명부분입니다.</div>
+                <div className="post__info">
+                    <span className="author">배석찬</span>
+                    <span className="date">2022-04-29</span>
                 </div>
-            </article>
-        </>
+            </div>
+        </article>
     );
 }

@@ -1,0 +1,54 @@
+.blog__label {
+    color: #fff;
+    background: url('https://images.pexels.com/photos/11642205/pexels-photo-11642205.jpeg?cs=srgb&dl=pexels-haticebaran-11642205.jpg&fm=jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+    position: relative;
+    z-index: 1;
+}
+.blog__label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+.blog__label .author a {
+    color: #fff;
+}
+.blog__label .modify a {
+    color: #fff;
+    opacity: 0.4;
+    font-size: 0.8em;
+}
+.blog__label .delete a {
+    color: #fff;
+    opacity: 0.4;
+    font-size: 0.8em;
+}
+.blog__layout {
+    display: flex;
+    justify-content: space-between;
+}
+.blog__left {
+    width: calc(100% - 340px);
+    text-align-last: left;
+    line-height: 1.8;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    min-height: 800px;
+}
+.blog__left h4 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 0.6em;
+}
+.blog__right {
+    width: 300px;
+    margin-top: 80px;
+}

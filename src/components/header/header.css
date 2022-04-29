@@ -64,18 +64,24 @@
 
 #header .member {
     flex: 0 0 20%;
-    text-align: right;
     padding: 5px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 #header .member a {
     display: inline-block;
     padding: 9px 22px;
     border: 1px solid #000;
     border-radius: 50px;
+    margin-right: 1vw;
 }
-#header .member a img {
-    width: 30px;
-    height: 30px;
+#header .member a:nth-child(1) {
+    padding: 0;
+}
+#header .member img {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 #header .member .setting {
